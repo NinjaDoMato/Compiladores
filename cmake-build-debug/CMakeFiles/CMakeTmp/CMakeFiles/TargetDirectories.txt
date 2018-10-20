@@ -1,0 +1,3 @@
+C:/Users/a000075/Desktop/Faculdade/Semestre_6/CompiladoresOld/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir
+C:/Users/a000075/Desktop/Faculdade/Semestre_6/CompiladoresOld/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_a54ce.dir
+C:/Users/a000075/Desktop/Faculdade/Semestre_6/CompiladoresOld/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
