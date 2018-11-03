@@ -8,6 +8,7 @@
 #include <vector>
 
 #include "Token.h"
+#include "../Controller/Arquivo.cpp"
 
 using namespace std;
 
@@ -33,7 +34,6 @@ private:
 
     vector<char> Buffer;
 };
-
 
 
 
