@@ -24,6 +24,11 @@ Token Compilador::Analex(char c)
                 lex += c;
                 state = 4;
             }
+            else if(c == '\"')
+            {
+                lex += c;
+                state = 6;
+            }
 
         //break;
 
@@ -71,26 +76,58 @@ Token Compilador::Analex(char c)
             }
 
             Token token ("L_FLT", lex);
-            return token;
+            //return token;
 
         case 4:
 
             c = file.Prox_char();
 
-            while(c != '\'')
+            if(c != '\'')
             {
-
+                lex += c;
+                state = 5;
             }
-
-            break;
+            else
+            {
+                // TODO:  definir uma mensagem de erro, talvez uma Exception pra ficar legal
+            }
 
         case 5:
 
-        break;
+            c = file.Prox_char();
+
+            if(c == '\'')
+            {
+                lex += c;
+
+                Token token("L_CHAR", lex);
+                return token;
+            }
+            else
+            {
+                // TODO:  definir uma mensagem de erro, talvez uma Exception pra ficar legal
+            }
 
         case 6:
 
-        break;
+            c = file.Prox_char();
+
+            while(c != '\"')
+            {
+                lex += c;
+                c = file.Prox_char();
+            }
+
+            if(c == '\"')
+            {
+                lex += c;
+                Token token("L_STR", lex);
+                return token;
+            }
+            else
+            {
+                // TODO:  definir uma mensagem de erro, talvez uma Exception pra ficar legal
+            }
 
         case 7:
 
