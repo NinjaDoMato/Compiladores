@@ -3,6 +3,7 @@
 #include "../Model/Arquivo.h"
 
 // TODO: organizar melhor a leitura do proximo char, por enquanto só defini os estados do analex
+// TODO: organizar melhor o switch-case. O compilador fica apontando que os states são inacesiveis.
 
 Token Compilador::Analex(char c)
 {
@@ -19,7 +20,7 @@ Token Compilador::Analex(char c)
                 lex += c;
                 state = 1;
             }
-            else if (c == '\'')
+            else if(c == '\'')
             {
                 lex += c;
                 state = 4;
@@ -28,6 +29,16 @@ Token Compilador::Analex(char c)
             {
                 lex += c;
                 state = 6;
+            }
+            else if(c == '+')
+            {
+                lex += c;
+                state = 8;
+            }
+            else if(c == '-')
+            {
+                lex += c;
+                state = 9;
             }
 
         //break;
@@ -112,6 +123,18 @@ Token Compilador::Analex(char c)
 
             c = file.Prox_char();
 
+            if(c != '\"')
+            {
+                lex += c;
+                state = 7;
+            }
+            else
+            {
+                // TODO:  definir uma mensagem de erro, talvez uma Exception pra ficar legal
+            }
+
+        case 7:
+
             while(c != '\"')
             {
                 lex += c;
@@ -129,15 +152,55 @@ Token Compilador::Analex(char c)
                 // TODO:  definir uma mensagem de erro, talvez uma Exception pra ficar legal
             }
 
-        case 7:
-
-        break;
-
         case 8:
+
+            c = file.Prox_char();
+
+            if(c == '+')
+            {
+                lex += c;
+
+                Token token("O_INC", lex);
+                return token;
+            }
+            else if(c == '=')
+            {
+                lex += c;
+
+                Token token("O_MEQ", lex);
+                return token;
+            }
+            else
+            {
+                Token token("O_SUM", lex);
+                return token;
+            }
 
         break;
 
         case 9:
+
+            c = file.Prox_char();
+
+            if(c == '-')
+            {
+                lex += c;
+
+                Token token("O_SNC", lex);
+                return token;
+            }
+            else if(c == '=')
+            {
+                lex += c;
+
+                Token token("O_SEQ", lex);
+                return token;
+            }
+            else
+            {
+                Token token("O_SUB", lex);
+                return token;
+            }
 
         break;
 
