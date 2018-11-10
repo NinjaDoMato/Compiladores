@@ -3,28 +3,47 @@
 
 #include <string>
 
-using namespace std;
-
 class Token
 {
 public:
 
-    inline Token(string token, string lexema): TokenId(token), Lexema(lexema) {}
+    Token(std::string token, std::string lexema, std::string log): TokenId(token), Lexema(lexema), Log(log) {}
 
-    inline string GetTokenId()
+    inline void SetTokenId(std::string tokenId)
+    {
+        this->TokenId = tokenId;
+    };
+
+    inline void SetLexema(std::string lexema)
+    {
+        this->Lexema = lexema;
+    };
+
+    inline std::string GetTokenId()
     {
         return this->TokenId;
     };
 
-    inline string GetLexema()
+    inline std::string GetLexema()
     {
         return this->Lexema;
     };
 
+    inline void SetLog(std::string log)
+    {
+        this->Log = log;
+    };
+
+    inline std::string GetLog()
+    {
+        return this->Log;
+    };
+
 private:
 
-    string TokenId;
-    string Lexema;
+    std::string TokenId;
+    std::string Lexema;
+    std::string Log;
 };
 
 
