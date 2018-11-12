@@ -1,4 +1,3 @@
-ToolSet: 15.0@C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
 Options: 
 
-Options:-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.12.25827/bin/Hostx86/x86/cl.exe
+Options:

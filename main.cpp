@@ -1,12 +1,10 @@
 #include <iostream>
 
-#include "Model/Arquivo.h"
+#include "Controller/CompiladorController.h"
 
 int main()
 {
-    std::cout << "Hello, Didizao!" << std::endl;
-
-    Arquivo teste ("teste", "teste");
-
-    return 0;
+    CompiladorController compiladorController;
+    compiladorController.executar();
+    return EXIT_SUCCESS;
 }
