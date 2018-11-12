@@ -11,7 +11,7 @@ using namespace std;
  */
 Arquivo::Arquivo(string inputFile, string outputFile)
 {
-    this->Log = ofstream(outputFile);
+    //this->Log = ofstream(outputFile, ios_base::app);
     this->File = ifstream(inputFile);
     vector<char> auxiliar;
 
@@ -57,11 +57,41 @@ void Arquivo::Ant_char(){
  */
 void Arquivo::Grava_token(string estado, Token token)
 {
-    if (this->Log.is_open())
+    //this->Log.open("saida.txt", ios::app);
+
+    ofstream arquivo("saida", ios_base::trunc);
+
+    if (arquivo.is_open())
     {
-        this->Log << estado << "    " << token.GetTokenId() << "    " << token.GetLexema() << endl;
+        std::cout << "Arquivo de texto aberto com sucesso!" << std::endl;
+
+        string teste = "Teste";
+
+        arquivo << teste;
+
     }
-    this->Log.close();
+    else
+        std::cout << "Erro ao abrir arquivo de texto.";
+
+    arquivo.close();
+}
+
+void GravaToken(std::vector<Token> tokens){
+    ofstream arquivo("saida", ios_base::trunc);
+
+    if (arquivo.is_open())
+    {
+        for(int i=0; i<tokens.size();i++) {
+
+            string linha = "|"+tokens[i].GetLog()+"|"+tokens[i].GetTokenId()+"|"+tokens[i].GetLexema()+"|";
+            arquivo << linha;
+        }
+
+    }
+    else
+        std::cout << "Erro ao abrir arquivo de texto.";
+
+    arquivo.close();
 }
 
 /**

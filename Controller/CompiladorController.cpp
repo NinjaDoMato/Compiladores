@@ -7,7 +7,6 @@
 #include "CompiladorController.h"
 #include "../Model/AnalisadorLexico.h"
 #include "../Model/Arquivo.h"
-#include "../Model/Lexico.h"
 
 using namespace std;
 
@@ -19,6 +18,7 @@ void CompiladorController::executar() {
     //AnalisadorLexico analisadorLexico;
     Arquivo arquivo("../entrada.txt", "../saida.txt");
     AnalisadorLexico analisadorLexico(arquivo);
+    vector<Token> tokens;
 
     while (!arquivo.getBuffer().empty()) {
         char c = arquivo.Prox_char();
@@ -27,7 +27,10 @@ void CompiladorController::executar() {
         cout << "ANALISADOR LOG --> " << token.GetLog() << endl;
         cout << "TOKEN ID --> " << token.GetTokenId() << endl;
         cout << "LEXEMA --> " << token.GetLexema() << endl;
+        tokens.push_back(token);
     }
+    //arquivo.GravaToken(tokens);
+
 }
 
 void CompiladorController::analisar(Arquivo arquivo) {
