@@ -1,7 +1,8 @@
 Compilador D+
 
 Autores:
-            Daniel Deda
+
+            Daniel Deda            
             Winderson dos Santos
             
 Desenvolvido em C++ como estudo dirigido da matéria de
