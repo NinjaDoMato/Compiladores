@@ -1,4 +1,5 @@
 a=b
 1 + 2
 1.2 + 2
-
+c = 'x'
+s="quem ler é bobão"
