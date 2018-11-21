@@ -7,7 +7,7 @@
 using namespace std;
 
 // TODO: Usei os nomes dos métodos que estão na apostila, podemos mudar isso
-// TODO: Podemos fazer um esquema igual ao Enum do Lexico para substitur as strings passadas por parametros
+// TODO: Podemos fazer um esquema igual ao Enum do Lexico para substitur as strings passadas por parametros e representar o tipo
 
 class TabelaDeSimbolos
 {
