@@ -12,9 +12,11 @@ using namespace std;
  * 
  * @param c
  * @return Token
+ *
  */
- 
- //TODO: Verificar se estrutura de verificação dos estados não fica mais clara 
+
+ // TODO: Remover interação com o arquivo para outro lugar, assim o sintático poderá fazer a analise em pararlelo
+ // TODO: Verificar se estrutura de verificação dos estados não fica mais clara
  //      utilizando Switch-Case (considerando a estrutura inicial do professor)
  
 Token AnalisadorLexico::Analex(char caracter) {

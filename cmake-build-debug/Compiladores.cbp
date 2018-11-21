@@ -4,117 +4,115 @@
 	<Project>
 		<Option title="Compiladores"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug"/>
+				<Option working_dir="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Compiladores">
-				<Option output="/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Compiladores" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug"/>
+				<Option output="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug/Compiladores.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 Compiladores"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 Compiladores"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Compiladores/fast">
-				<Option output="/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Compiladores" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug"/>
+				<Option output="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug/Compiladores.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 Compiladores/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 Compiladores/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\a000075\Desktop\Faculdade\Semestre_6\Compiladores\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Controller/CompiladorController.cpp">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Controller/CompiladorController.cpp">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Controller/CompiladorController.h">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Controller/CompiladorController.h">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Enuns/EstadoEnum.cpp">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Enuns/EstadoEnum.cpp">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Enuns/EstadoEnum.h">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Enuns/EstadoEnum.h">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Model/AnalisadorLexico.cpp">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Model/AnalisadorLexico.cpp">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Model/AnalisadorLexico.h">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Model/AnalisadorLexico.h">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Model/Arquivo.cpp">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Model/Arquivo.cpp">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Model/Arquivo.h">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Model/Arquivo.h">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/Model/Token.h">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Model/Token.h">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/main.cpp">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/main.cpp">
 			<Option target="Compiladores"/>
 		</Unit>
-		<Unit filename="/home/winderson/Universidade/GitHub/Compiladores/CMakeLists.txt">
+		<Unit filename="C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

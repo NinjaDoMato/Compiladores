@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Compiladores.dir/main.cpp.o CMakeFiles/Compiladores.dir/Model/Arquivo.cpp.o CMakeFiles/Compiladores.dir/Model/AnalisadorLexico.cpp.o CMakeFiles/Compiladores.dir/Controller/CompiladorController.cpp.o CMakeFiles/Compiladores.dir/Enuns/EstadoEnum.cpp.o  -o Compiladores 

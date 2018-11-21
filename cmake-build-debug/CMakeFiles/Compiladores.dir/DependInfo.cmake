@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/winderson/Universidade/GitHub/Compiladores/Controller/CompiladorController.cpp" "/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/Controller/CompiladorController.cpp.o"
-  "/home/winderson/Universidade/GitHub/Compiladores/Enuns/EstadoEnum.cpp" "/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/Enuns/EstadoEnum.cpp.o"
-  "/home/winderson/Universidade/GitHub/Compiladores/Model/AnalisadorLexico.cpp" "/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/Model/AnalisadorLexico.cpp.o"
-  "/home/winderson/Universidade/GitHub/Compiladores/Model/Arquivo.cpp" "/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/Model/Arquivo.cpp.o"
-  "/home/winderson/Universidade/GitHub/Compiladores/main.cpp" "/home/winderson/Universidade/GitHub/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/main.cpp.o"
+  "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Controller/CompiladorController.cpp" "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/Controller/CompiladorController.cpp.obj"
+  "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Enuns/EstadoEnum.cpp" "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/Enuns/EstadoEnum.cpp.obj"
+  "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Model/AnalisadorLexico.cpp" "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/Model/AnalisadorLexico.cpp.obj"
+  "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/Model/Arquivo.cpp" "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/Model/Arquivo.cpp.obj"
+  "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/main.cpp" "C:/Users/a000075/Desktop/Faculdade/Semestre_6/Compiladores/cmake-build-debug/CMakeFiles/Compiladores.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
