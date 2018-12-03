@@ -64,11 +64,6 @@ void Arquivo::Grava_token(string estado, Token token)
     if (arquivo.is_open())
     {
         std::cout << "Arquivo de texto aberto com sucesso!" << std::endl;
-
-        string teste = "Teste";
-
-        arquivo << teste;
-
     }
     else
         std::cout << "Erro ao abrir arquivo de texto.";
